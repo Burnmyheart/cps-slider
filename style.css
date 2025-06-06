@@ -1,17 +1,26 @@
 @font-face {
   font-family: "TT Lakes";
+  src: url("fonts/TTLakes-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url("fonts/TTLakes-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes";
   src: url("fonts/TTLakes-Regular.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
 }
 @font-face {
   font-family: "TT Lakes";
   src: url("fonts/TTLakes-Medium.woff") format("woff");
   font-weight: 500;
-}
-@font-face {
-  font-family: "TT Lakes";
-  src: url("fonts/TTLakes-Bold.woff") format("woff");
-  font-weight: 700;
+  font-style: normal;
 }
 
 body {
@@ -45,7 +54,9 @@ body {
   border-radius: 6px;
   display: flex !important;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .brands__arrow {
@@ -73,4 +84,173 @@ body {
 
 .swiper-pagination-bullet-active {
   background-color: #B5B6BC !important;
+}
+
+.brands-grid {
+  display: none;
+}
+.brands-grid.expanded {
+  max-height: none;
+}
+.toggle-btn {
+  display: none;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.toggle-btn {
+  display: none;
+  margin-top: 16px;
+  margin-left: 16px;
+  font-family: "TT Lakes", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1b1c21;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 8px;
+  align-items: center;
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+  .brands__slider {
+    display: none !important;
+  }
+  .brands{
+    max-width:768px;
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+
+  }
+  .brands__title {
+    padding: 0;
+    margin: 0;
+  }
+  .brand {
+    width: 224px ;
+    height: 72px ;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid rgba(234, 234, 234, 1);
+    border-radius: 6px;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+  
+  }
+  .brands-grid {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 24px;
+    padding-left: 32px;
+  }
+  .brand__hiden {
+    display: none;
+  }
+  .brand__btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .toggle-btn {
+    display: flex;
+    gap: 8px;
+    padding-left: 25px;
+  }
+  .toggle-btn__text{
+    font-family: "TT Lakes", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+  }
+  .brands-grid.expanded .brand__hiden {
+    display: flex; 
+  }
+}
+
+@media (min-width: 1120px) {
+  .brands__slider {
+    display: none !important;
+  }
+  .brands{
+    max-width:1120px;
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+
+  }
+  .brands__title {
+    padding: 0;
+    margin: 0;
+  }
+  .brand {
+    width: 224px ;
+    height: 72px ;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid rgba(234, 234, 234, 1);
+    border-radius: 6px;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+  
+  }
+  .brands-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 24px;
+    padding-left: 32px;
+  }
+  .brand__btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: opacity 0.3s ease;
+  }
+  .toggle-btn {
+    display: flex;
+    gap: 8px;
+    padding-left: 25px;
+  }
+
+  .toggle-btn__text{
+  font-family: "TT Lakes", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+
+  }
+
+  .brand__hiden {
+    display: none;
+  }
+
+  .brand__hiden:nth-child(7)
+  
+  {
+    display: flex;
+  }
+  .brand__hiden:nth-child(8)
+  
+  {
+    display: flex;
+  }
+  .brands-grid.expanded .brand__hiden {
+    display: flex; 
+  }
 }
