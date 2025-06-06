@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "TT Lakes";
+  src: url("fonts/TTLakes-Regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url("fonts/TTLakes-Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url("fonts/TTLakes-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  font-family: "TT Lakes", sans-serif;
+}
+
+.brands {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.brands__title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  color: #7e7e82;
+  text-transform: uppercase;
+}
+
+.brands__item {
+  width: 224px !important;
+  height: 72px !important;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid rgba(234, 234, 234, 1);
+  border-radius: 6px;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.brands__arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.3s ease;
+}
+
+.brands__arrow:hover {
+  opacity: 0.7;
+}
+
+.swiper-pagination {
+  position: relative !important;
+  text-align: center;
+  margin-top: 16px;
+
+}
+
+.swiper-pagination-bullet {
+  background-color: #DDDDDD !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #B5B6BC !important;
+}
