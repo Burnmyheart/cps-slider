@@ -122,6 +122,22 @@ body {
   align-items: center;
 }
 
+.brands__arrow {
+  transition: opacity 0.3s ease;
+}
+
+.brands__arrow:hover {
+  opacity: 0.7;
+}
+
+.brand__btn {
+  transition: opacity 0.3s ease;
+}
+
+.brand__btn:hover {
+  opacity: 0.7;
+}
+
 @media (min-width: 768px) and (max-width: 1119px) {
   .brands__slider {
     display: none !important;
