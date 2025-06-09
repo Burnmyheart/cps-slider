@@ -29,6 +29,8 @@ body {
   background-color: #f8f8f8;
   font-family: "TT Lakes", sans-serif;
 }
+
+
 .brands-section {
   display: flex;
   flex-direction: column;
@@ -42,6 +44,12 @@ body {
   position: relative;
   background: #f8f8f8;
   overflow: hidden;
+  z-index: 1;
+}
+
+.brands__header {
+  background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+  padding: 16px;
 }
 
 .brands__fade {
@@ -51,14 +59,12 @@ body {
   width: 24px;
   height: 81px;
   z-index: 10;
-  background: linear-gradient(1 #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
   pointer-events: none;
 }
 
 .brands__title {
-  background: linear-gradient(to right, #F8F8F8 0%, #FFFFFF 98.61%);
-  padding: 16px;
-  /* background-color: #fff; */
+  
   margin: 0;
   font-size: 16px;
   line-height: 24px;
