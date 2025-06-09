@@ -84,10 +84,11 @@ body {
   position: relative !important;
   text-align: center;
   margin-top: 16px;
-
 }
 
 .swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
   background-color: #DDDDDD !important;
 }
 
@@ -175,10 +176,10 @@ body {
   }
   .brands-grid {
     display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, 224px);
+    gap: 16px 24px;
     padding-left: 32px;
-    padding-right: 32px;
+    /* padding-right: 32px; */
     max-width: 100%;
   }
   .brand__hiden {
@@ -242,8 +243,8 @@ body {
   }
   .brands-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, 224px);
+    gap: 16px 24px;
     padding-left: 32px;
     max-width: 1120px;
   }
@@ -298,20 +299,21 @@ body {
     gap: 32px;
     padding-left: 24px;
     padding-right: 24px;
+    /* overflow: hidden; */
   }
 
-  .toggle-btn {
+  /* .toggle-btn {
     display: none;
-  }
+  } */
 
-  .brand__hiden {
+  /* .brand__hiden {
     display: none;
-  }
+  } */
 
   .brands__slider {
     display: none !important;
   }
-
+  
   .brand {
     width: 224px ;
     height: 72px ;
@@ -335,3 +337,4 @@ body {
     transition: opacity 0.3s ease;
   }
 }
+
