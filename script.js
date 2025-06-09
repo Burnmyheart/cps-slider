@@ -1,24 +1,11 @@
-new Swiper('.brands__slider', {
+swiper = new Swiper(".swiper", {
     slidesPerView: 'auto',
-    slidesOffsetBefore: 0,
+    slidesOffsetBefore: 16,
+    slidesOffsetAfter: 16,
+    centeredSlides: false,
     spaceBetween: 16,
-    // breakpoints: {
-    //     480: {
-    //         slidesPerView: 2,
-    //     },
-    //     640: {
-    //         slidesPerView: 2.5,
-    //     },
-    //     768: {
-    //         slidesPerView: 3,
-    //     },
-    // },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    }
-
-})
+    pagination: { el: ".swiper-pagination", clickable: true },
+});
 
 const toggleBtn = document.querySelector('.toggle-btn');
 const toggleText = toggleBtn.querySelector('.toggle-btn__text');
@@ -29,3 +16,4 @@ toggleBtn.addEventListener('click', () => {
     toggleBtn.classList.toggle('active');
     toggleText.textContent = grid.classList.contains('expanded') ? 'Скрыть' : 'Показать все';
 });
+
