@@ -36,8 +36,28 @@ body {
 }
 .brands {
   max-width: 100%;
-  margin: 0 auto;
   padding-left: 16px;
+  padding-right: 16px;
+  margin-right: 16px;
+
+
+}
+
+.brands {
+  position: relative;
+  background: #f8f8f8;
+  overflow: hidden;
+}
+
+.brands__fade {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 81px;
+  z-index: 10;
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+  pointer-events: none;
 }
 
 .brands__title {
